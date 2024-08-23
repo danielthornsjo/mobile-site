@@ -8,6 +8,7 @@ body {
       color: #cdcdcd;
       font-family: "Avenir Next", "Avenir", sans-serif;
 }
+@media screen and (max-width: 600px) {
 #menuToggle {
       display: block;
       position: relative;
@@ -93,6 +94,7 @@ body {
 }
 #menuToggle input:checked ~ ul {
       transform: none;
+}
 }
 
 
