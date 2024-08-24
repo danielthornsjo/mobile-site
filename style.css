@@ -11,6 +11,10 @@ html {
       font-family: 'Roboto', sans-serif;
 }
 
+body {
+      background-color: #FCFDFC;
+}
+
 li {
       list-style: none;
 }
@@ -20,14 +24,17 @@ a {
 }
 
 .header {
-      border-bottom: 1px solid #e2e8f0;
+      border-bottom: 1px solid #000000;
+      background-color: #7C9586;
 }
 
 .navbar {
       display: flex;
+      margin: 0 auto;
       justify-content: space-between;
       align-items: center;
       padding: 1rem 1.5rem;
+      width: 70vw;
 }
 
 .hamburger {
@@ -51,65 +58,91 @@ a {
 }
 
 .nav-item {
-      margin-left: 5rem;
+      margin-left: 2rem;
 }
 
 .nav-link {
       font-size: 1.6rem;
       font-weight: 400;
       color: #475569;
+      padding: 10px;
 }
 
 .nav-link:hover {
-      color: #482ff7;
+      color: #475569;
+      background-color: #93A2A8;
+      padding: 10px;
+      border-radius: 5px;
 }
 
 .nav-logo {
       font-size: 2.1rem;
       font-weight: 500;
-      color: #482ff7
+      color: #B7C3C5;
 }
 
 
+main {
+      width: 70vw;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffff;
+}
+
+img {
+      width: 25vw;
+}
+
+section {
+      display: flex;
+      gap: 40px;
+      margin: 40px;
+}
+
+.card-info {
+      padding: 20px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      border-radius: 5px;
+      width: 30vw;
+}
 
 /* Mobile View */
-@media only screen and (max-width: 985px) {
+@media only screen and (max-width: 1206px) {
       .nav-menu {
             position: absolute;
             top: 74px;
             left: -100%;
             background-color: #ffffff;
             width: 90%;
-            /* gap: 15px; */
             border-radius: 10px;
             transition: 0.3s;
             box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
             flex-direction: column;
-
       }
-
+      .nav-link:hover {
+            background-color: #ffffff;
+            color: #7C9586;
+      }
+      .navbar {
+            width: 100vw;
+      }
       .nav-menu.active {
             left: 0;
       }
-
       .nav-item {
             margin: 1rem 0;
             column-gap: 15px;
       }
-
       .hamburger {
             display: block;
             cursor: pointer;
       }
-
       .hamburger.active .bar:nth-child(2) {
             opacity: 0;
       }
-
       .hamburger.active .bar:nth-child(1) {
             transform: translateY(8px) rotate(45deg);
       }
-
       .hamburger.active .bar:nth-child(3) {
             transform: translateY(-8px) rotate(-45deg);
       }
