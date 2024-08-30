@@ -39,7 +39,7 @@ a {
 }
 
 header .row {
-      margin-top: 350px;
+      margin-top: 130px;
 }
 
 .row {
@@ -50,32 +50,48 @@ header .row {
 }
 
 .col-2 {
-      flex-basis: 50%;
-      min-width: 300px;
-      color: #407287;
+      color: #bfaa31;
+      background-color: #2c5364;
+      border-radius: 30px;
+      margin: 24px;
+      padding: 40px;
+      display: grid;
+      width: 100%;
+      grid-template-areas: "h1 h1 img ." "p p img ." "button . img .";
 }
 
 .col-2 h1 {
       font-size: 50px;
-      line-height: 60px;
       margin: 25px;
       font-weight: 400;
+      grid-area: h1;
+      margin-top: 50px;
+}
+
+.col-2 img {
+      grid-area: img;
+      justify-self: end;
+      max-width: 258px;
 }
 
 p {
       display: block;
       margin: 25px;
+      font-size: 20px;
+      grid-area: p;
 }
 
 .btn {
       display: inline-block;
       background-color: #bfaa31;
       color: #000000;
-      padding: 8px 30px;
-      margin: 30px;
-      border-radius: 20px;
+      padding: 8px 20px;
+      margin: 20px;
+      border-radius: 30px;
       transition: background 0.5s;
       font-size: 18px;
+      grid-area: button;
+      align-content: center;
 }
 
 .btn:hover {
@@ -135,34 +151,6 @@ p {
       font-weight: 500;
       color: #bfaa31;
       transition: color 0.5s;
-}
-
-
-main {
-      background-color: #ffff;
-}
-
-img {
-      width: 100%;
-
-}
-
-section {
-      display: flex;
-      gap: 40px;
-      margin: 40px;
-}
-
-.card {
-      height: calc(100vh - 152px);
-      justify-content: center;
-}
-
-.card-info {
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-      border-radius: 5px;
-      padding: 20px;
-      width: 40vh;
 }
 
 /* Mobile View */
